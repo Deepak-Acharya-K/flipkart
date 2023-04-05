@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        img
+        {
+        height: 70px;
+        padding-left:50%;
+        display: flex;
+        width: 100px;
+        }
+        #header2 td
+        {
+            width: 400px;
+        }
+        #header3 td:hover
+        {
+           font-weight: 600;
+        }
+        #header3 td
+        {
+            width: 400px;
+            text-align: right;
+        }
+        .banner
+        {
+            width: 70%;
+            height: 250px;
+            background-image:url(img/b3.jpg);
+            background-size:cover;
+            position: relative;
+            margin-left: 15%;
+            
+            animation-name: animate;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count:infinite;
+            transition: 1s;
+        }
+        .card
+        {
+          
+            transition: 0.3s;
+            width: 194px;
+            height: 300px;
+            border-radius: 25px;
+            border: 2px solid black;
+            margin-left: 40px;
+            margin-right: 40px;
+            display: inline-block;
+
+        }
+        .card img
+        {
+           padding-left: 0%;
+           height: 150px;
+           border-radius: 25px;
+        }
+        .card:hover
+        {
+            box-shadow: 0 19px 19px 0 black;
+            cursor:pointer;
+        }
+        .checked
+        {
+            color:orange;
+        }
+        .container
+        {
+            margin-left: 10px ;
+        }
+        input[type="checkbox"]:checked
+        {
+            box-shadow: 0 0 0 3px rgb(9, 189, 12);
+        }
+        input[type="checkbox"]
+        {
+            width: 20px;
+            height: 15px;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-top: 15px;        
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <!--headding1-->
+    <table border="0px" style="width: 100%;height: 20px;background:#177de3;">
+        <tr>
+            <td style="width: 20%;"><img src="img/h1.jpeg" ></td>
+            <td style="width: 31%;"><input type="search" placeholder="Search for products,brands and more" style="width: 100%;height: 30px;padding: 10px;"></td>
+            <td style="width: 2%;"><a href="http://www.google.com"><img src="img/h2.png" style="display:flex;width: 40px;height: 30px;padding-left: 0%;"></a></td>
+            <th style="width:10%; color: aliceblue;padding-left: 2%;">Login</th>
+            <th style="width:10%; color: aliceblue;">Become a Seller</th>
+            <th style="width:10%;color: aliceblue;">More</th>
+            <th style="width:10%;color: aliceblue;">Cart</th>
+        </tr>
+    </table>
+
+    <!--headding2-->
+    <table id="header2" >
+        <tr>
+            <td><img src="img/m7.jpeg" alt=""></td>
+            <td><img src="img/m6.jpeg" alt=""></td>
+            <td><img src="img/m5.jpeg" alt=""></td>
+            <td><img src="img/m4.jpeg" alt=""></td>
+            <td><img src="img/m3.jpeg" alt=""></td>
+            <td><img src="img/m2.jpeg" alt=""></td>
+            <td><img src="img/m1.jpeg" alt=""></td>
+        </tr>
+    </table>
+
+    <!--headding2-->
+    <table id="header3">
+        <tr>
+            <td>Grocery</td>
+            <td>Mobiles</td>
+            <td>Fashion</td>
+            <td>Electronics</td>
+            <td>Travel</td>
+            <td>Two Wheelers</td>
+            <td>Beauty,Toys & more</td>
+        </tr>
+    </table>
+    
+    <!--banner-->
+    <div class="banner"></div>
+
+    <!--pendrive-->
+    <br>
+    <h2><b>Pendrives</b></h2><br>
+    <div class="pendrive-display">
+        <a href="pendrive.html" style="color:black";>
+        <div class="card">
+        <img src="img/p1.jpeg" style="width: 100%;">
+            <div class="container">
+                <p> 
+                    SanDisk Ultra Dual...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">₹1,400</s></b><b style="font-size: 25px;padding-left: 10px;">₹569</b><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">59% off</b>
+                <p style="font-size: 15px;"> Free delivery</p>
+                    <div class="rating" >
+                         <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+
+        <div class="card">
+        <img src="img/p2.jpeg" style="width: 100%;">
+            <div class="container">
+                <p>Sandisk Cruzer Blade...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">₹450 </s></b><b style="font-size: 25px;padding-left: 10px;">₹259</b><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">42% off</b>
+                <p style="font-size: 15px;"> Free delivery</p> 
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                                            </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+
+        <div class="card">
+        <img src="img/p3.jpeg" style="width: 100%;">
+            <div class="container">
+                <p>HP V215B 32 GB Pen...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">
+                    ₹749 </s></b><b style="font-size: 25px;padding-left: 10px;">₹356</b><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">52% off</b>
+                <p style="font-size: 15px;"> Free delivery</p>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+
+        <div class="card">
+        <img src="img/p4.jpeg" style="width: 100%;">
+            <div class="container">
+                <p>SONY USM64GR 64 GB...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">₹524 </s></b><b style="font-size: 25px;padding-left: 10px;">₹240</b><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">42% off</b>
+                <p style="font-size: 15px;"> Free delivery</p>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+
+        <div class="card">
+        <img src="img/p5.jpeg" style="width: 100%;">
+            <div class="container">
+                <p>tech mentorz Lexar...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">1,999</s></b><b style="font-size: 25px;padding-left: 10px;">$744</b><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">62% off</b>
+                <p style="font-size: 15px;"> Free delivery</p>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+    </a>
+        
+    </div> 
+
+    <!--tv-->
+    <br>
+    <h2><b>Smart tv</b></h2><br>
+    <a href="tv.html" style="color:black";>
+    <div class="card">
+        
+        <img src="img/tv1.jpeg" style="width: 100%;">
+            <div class="container">
+                <p>Mi 5A 43''Full HD LED..</p>
+                <b style="color: gray;"><s style="font-size: 20px;">35,999</s></b><b style="font-size: 25px;padding-left: 10px;">$24,999</b><br><b style="font-size: 15px;color: rgb(12, 157, 10);">30% off</b>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/tv2.jpg" style="width: 100%;">
+                <div class="container">
+                    <p>Mi 5A 108 cm (43 inch) ..</p>
+                    <b style="color: gray;"><s style="font-size: 20px;">₹35,999</s></b><b style="font-size: 25px;padding-left: 10px;">₹24,999</b><br><b style="font-size: 15px;color: rgb(12, 157, 10);">30% off</b>
+                    <p style="font-size: 15px;"> Free delivery</p>
+                        <div class="rating" >
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                        </div>
+                </div>
+            </div>
+
+        <div class="card">
+        <img src="img/tv3.jpg" style="width: 100%;">
+            <div class="container">
+                <p>LG 190.5 cm (75 inch)..</p>
+                <b style="color: gray;"><s style="font-size: 18px;">₹2,79,990 </s></b><b style="font-size: 25px;;">₹1,39,990</b><br><b style="font-size: 15px;color: rgb(12, 157, 10);">50% off</b>
+                <p style="font-size: 15px;"> Free delivery</p>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+            </div>
+        </div>
+
+        <div class="card">
+        <img src="img/tv4.jpg" style="width:100%;">
+            <div class="container">
+                <p>SONY Bravia 163.9cm...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">₹1,79,990</s></b><b style="font-size: 25px;">₹1,13,999</b><br><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">36% off</b>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+
+        <div class="card">
+        <img src="img/tv5.jpeg" style="width: 100%;">
+            <div class="container">
+                <p>SAMSUNG 80 cm...</p>
+                <b style="color: gray;"><s style="font-size: 20px;">₹18,900</s></b><b style="font-size: 25px;padding-left: 10px;">₹12,990</b><br><b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">32% off</b>
+                    <div class="rating" >
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <b style="font-size: 15px;padding-left: 10px;color: rgb(12, 157, 10);">Bank Offer</b>
+            </div>
+        </div>
+    </div> 
+    </a>
+   
+
+
+
+</body>
+</html>
